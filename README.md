@@ -36,8 +36,8 @@
 
 ```bash
 git clone https://github.com/Mactavish410/todo-ReduxT.git
-cd todo-table-app
-npm install
+cd todo-ReduxT
+npm i
 npm run dev
 
 ➡ Открой в браузере: http://localhost:5173
