@@ -24,8 +24,6 @@
 - Material UI (MUI)
 - localStorage
 
-### 🚀 Запуск проекта
-
 ### 🧩 Структура
 
 ```src/
@@ -35,6 +33,8 @@
 ├── App.tsx
 └── main.tsx
 ```
+
+### 🚀 Запуск проекта
 
 ```bash
 git clone https://github.com/your-username/todo-table-app.git
