@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# 📝 ToDo Table App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простой и современный ToDo-лист в виде таблицы с возможностью редактирования, сортировки, фильтрации и сохранения в `localStorage`.
 
-Currently, two official plugins are available:
+### ⚙️ Функции
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Добавление задач
+- Редактирование по двойному клику
+- Отметка выполненных задач
+- Удаление задач
+- Сортировка по названию и дате
+- Сохранение данных в `localStorage`
+- UI на базе Material UI
 
-## Expanding the ESLint configuration
+### 📌 Планы
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Сортировка по названию и дате
+- Сохранение данных в `localStorage`
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🛠️ Технологии
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React + TypeScript
+- Redux Toolkit
+- Material UI (MUI)
+- localStorage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🚀 Запуск проекта
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/your-username/todo-table-app.git
+cd todo-table-app
+npm install
+npm run dev
+
+➡ Открой в браузере: http://localhost:5173
+
+### 🧩 Структура ###
+
+src/
+├── components/ToDoTable.tsx
+├── features/todosSlice/todoSlice.ts
+├── store/store.ts
+├── App.tsx
+└── main.tsx
 ```
