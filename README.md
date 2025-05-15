@@ -8,8 +8,6 @@
 - Редактирование по двойному клику
 - Отметка выполненных задач
 - Удаление задач
-- Сортировка по названию и дате
-- Сохранение данных в `localStorage`
 - UI на базе Material UI
 
 ### 📌 Планы
@@ -37,7 +35,7 @@
 ### 🚀 Запуск проекта
 
 ```bash
-git clone https://github.com/your-username/todo-table-app.git
+git clone https://github.com/Mactavish410/todo-ReduxT.git
 cd todo-table-app
 npm install
 npm run dev
